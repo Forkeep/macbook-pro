@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div, div::before, div::after {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    background-color: #eeeeee;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#style-code{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#style-code{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.display{
+    overflow: auto;
+}
+
+.computer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 首先，我得有一台电脑~ */
+
+.screen {
+    position: relative;
+    top: 41px;
+    width: 413px;
+    height: 325px;
+    border-radius: 10px;
+}
+
+.screen{
+    border: 2px solid #666666;
+    background-color: #000000;
+
+}
+
+.screen::after {
+    content: 'MacBook Pro';
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 10px;
+    border-radius: 0 0 5px 5px;
+    height: 22px;
+    width: 408px;
+}
+
+.screen::after{
+    background-color: #191919;
+    color: #ffffff;
+
+}
+
+
+.screen .display {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 12px;
+    width: 390px;
+    height: 295px;
+}
+
+.screen .display {
+    background-color: white;
+}
+
+
+.keyboard {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 325px;
+    width: 470px;
+}
+
+.keyboard {
+    border: 1px solid #868686;
+    background-color: #666666;
+    transform: perspective(600px) rotateX(30deg);
+}
+
+
+.blackbar {
+    height: 9px;
+    width: 340px;
+}
+
+.blackbar{
+    background-color: black;
+
+}
+
+.middle {
+    width: 470px;
+    height: 168px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.touch-board {
+    border-radius: 8px;
+    height: 112px;
+    width: 202px;
+    margin-bottom: 10px;
+}
+
+.touch-board {
+    background-color: #616161;
+    border: 1px solid #555555;
+}
+
+
+.side-audio {
+
+
+    height: 158px;
+    width: 22px;
+    white-space: normal;
+}
+
+.side-audio{
+    background: radial-gradient(#555 26%, transparent 0);
+    background-size: 3px 3px;
+}
+
+
+.keyboard-main {
+    width: 400px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.keyboard-main {
+    background-color: #656565;
+}
+
+.keyboard-main li{
+    visibility: visible;
+}
+
+.keyboard-main > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.keyboard-main > ul:nth-child(1) {
+    line-height: 12px;
+    height: 17px;
+    width: 400px;
+}
+
+.keyboard-main > ul:nth-child(2) {
+    height: 29px;
+    width: 400px;
+}
+
+.keyboard-main > ul:nth-child(3) {
+    height: 29px;
+    width: 400px;
+}
+
+.keyboard-main > ul:nth-child(4) {
+    height: 29px;
+    width: 400px;
+}
+
+.keyboard-main > ul:nth-child(5) {
+    height: 29px;
+    width: 400px;
+}
+
+.keyboard-main > ul:nth-child(6) {
+    height: 29px;
+    width: 400px;
+}
+
+
+.keyboard-main li {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}
+
+
+.keyboard-main .esc {
+    height: 12px;
+    width: 36px;
+}
+
+.keyboard-main .f {
+    height: 12px;
+    width: 20px;
+}
+
+.keyboard-main .letter {
+    height: 22px;
+    width: 22px;
+}
+
+.keyboard-main .delte {
+    height: 22px;
+    width: 36px;
+}
+
+
+.keyboard-main .tab {
+    height: 22px;
+    width: 36px;
+}
+
+
+.keyboard-main .caps-lock {
+    width: 45px;
+    height: 22px;
+}
+
+
+.keyboard-main .return {
+    width: 45px;
+    height: 22px;
+}
+
+
+.keyboard-main .shift {
+    width: 55px;
+    height: 22px;
+}
+
+.keyboard-main .cmd {
+    height: 22px;
+    width: 28px;
+}
+
+.keyboard-main .space {
+    width: 140px;
+    height: 22px;
+}
+
+
+/*画一个太极图*/
+/*.taichi {*/
+/*    position: relative;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    border-radius: 50%;*/
+/*    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%,*/
+/*    rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);*/
+/*}*/
+
+/*.taichi::before {*/
+/*    border-radius: 50%;*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    transform: translateX(50%);*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%,*/
+/*    rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%);*/
+/*}*/
+
+/*.taichi::after {*/
+/*    border-radius: 50%;*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    transform: translateX(50%);*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%,*/
+/*    rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);*/
+/*}*/
+
+
+@keyframes taichi {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*!*加点阴影效果吧*!*/
+/*.taichi{*/
+/*    box-shadow: 0 0 5px 5px #666666;*/
+/*}*/
+/*!*让太极图转起来吧*!*/
+/*.taichi {*/
+/*    animation: taichi 5s linear infinite;*/
+/*}*/
+
+
+@media (max-width: 500px) {
+
+    body {
+        background-color: #eeeeee;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .computer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screen {
+        position: relative;
+        top: 22px;
+        width: 210px;
+        height: 162px;
+        border: 1px solid #666666;
+        background-color: #000000;
+        border-radius: 5px;
+    }
+
+    .screen::after {
+        height: 11px;
+        width: 204px;
+        content: 'MacBook Pro';
+        position: absolute;
+        bottom: 0;
+        background-color: #191919;
+        color: #ffffff;
+        font-size: 5px;
+        text-align: center;
+        vertical-align: center;
+        line-height: 5px;
+        border-radius: 0 0 2.5px 2.5px;
+
+    }
+
+    .screen .display {
+        padding: 2.5px 5px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        width: 195px;
+        height: 147.5px;
+        font-size: 6px;
+    }
+
+
+    .keyboard {
+        border: 1px solid #868686;
+        background-color: #666666;
+        border-radius: 5px;
+        height: 162.5px;
+        width: 235px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /**/
+        transform: perspective(300px) rotateX(30deg);
+    }
+
+    .blackbar {
+        background-color: black;
+        height: 4.5px;
+        width: 170px;
+    }
+
+    .middle {
+        width: 235px;
+        height: 84px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .touch-board {
+        border-radius: 4px;
+        background-color: #616161;
+        border: 1px solid #555555;
+        height: 56px;
+        width: 101px;
+        margin-bottom: 5px;
+    }
+
+    .side-audio {
+        background: radial-gradient(#555 26%, transparent 0);
+        background-size: 1.5px 1.5px;
+        height: 79px;
+        width: 11px;
+    }
+
+    .keyboard-main {
+        background-color: #656565;
+        width: 200px;
+        height: 84px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2.5px;
+        align-items: center;
+        font-size: 6px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .keyboard-main > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .keyboard-main > ul:nth-child(1) {
+        line-height: 6px;
+        height: 8.5px;
+        width: 200px;
+    }
+
+    .keyboard-main > ul:nth-child(2) {
+        height: 14.5px;
+        width: 200px;
+    }
+
+    .keyboard-main > ul:nth-child(3) {
+        height: 14.5px;
+        width: 200px;
+    }
+
+    .keyboard-main > ul:nth-child(4) {
+        height: 14.5px;
+        width: 200px;
+    }
+
+    .keyboard-main > ul:nth-child(5) {
+        height: 14.5px;
+        width: 200px;
+    }
+
+    .keyboard-main > ul:nth-child(6) {
+        height: 14.5px;
+        width: 200px;
+    }
+
+
+    .keyboard-main li {
+        background-color: #111111;
+        color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 2.5px;
+
+    }
+
+    .keyboard-main .esc {
+        height: 6px;
+        width: 18px;
+    }
+
+    .keyboard-main .f {
+        height: 6px;
+        width: 10px;
+    }
+
+    .keyboard-main .letter {
+        height: 11px;
+        width: 11px;
+    }
+
+    .keyboard-main .delte {
+        height: 11px;
+        width: 18px;
+    }
+
+
+    .keyboard-main .tab {
+        height: 11px;
+        width: 18px;
+    }
+
+
+    .keyboard-main .caps-lock {
+        width: 22.5px;
+        height: 11px;
+    }
+
+
+    .keyboard-main .return {
+        width: 22.5px;
+        height: 11px;
+    }
+
+
+    .keyboard-main .shift {
+        width: 27.5px;
+        height: 11px;
+    }
+
+    .keyboard-main .cmd {
+        height: 11px;
+        width: 14px;
+    }
+
+    .keyboard-main .space {
+        width: 70px;
+        height: 11px;
+    }
+
+
+    .taichi {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .taichi::before {
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(50%);
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .taichi::after {
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateX(50%);
+        background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%,
+        rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    @keyframes taichi {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+    .taichi {
+        animation: taichi 5s linear infinite;
+    }
+
+    * {
+        font-size: 5px;
+    }
+
+}
